@@ -12,7 +12,8 @@ const countryImage = document.getElementById("countryImage");
 
 // Wyświetlamy tekst
 phraseText.textContent = "Phrase: " + phrase;
-countryText.textContent = "Country: " + country;
+countryText.innerHTML = `Country: ${country}
+<img src="img/flags/${country}.png" alt="${country} flag" class="inline-flag">`;
 
 // Obrazy przypisane do krajów
 const images = {
