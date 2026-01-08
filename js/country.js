@@ -38,7 +38,7 @@ document.body.style.backgroundColor = backgrounds[country];
 const randomIndex = Math.floor(Math.random() * images[country].length);
 countryImage.src = "img/" + images[country][randomIndex];
 
-// Obrót kompasu zależny od długości tekstu
+// Obrót kompasu zależy od długości tekstu
 const compass = document.querySelector(".compass");
 
 if (compass && phrase) {
